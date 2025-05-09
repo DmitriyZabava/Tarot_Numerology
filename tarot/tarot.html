@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Waite's Tarot Reading</title>
+		<link rel="stylesheet" href="tarot.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Гадание на картах Таро</h1>
+
+			<div class="controls">
+				<h2>Выберите точность расклада:</h2>
+				<select id="accuracy">
+					<option value="1">
+						Высокая (только старшие арканы)
+					</option>
+					<option value="2" selected>Низкая (вся колода)</option>
+				</select>
+				<button onclick="getTarotReading()">
+					Получить расклад
+				</button>
+			</div>
+
+			<div class="result" id="result" style="display: none">
+				<div class="cardheder">
+					<h2>Ваш расклад:</h2>
+				</div>
+				<div class="cards" id="cards"></div>
+				<div class="outcome" id="outcome"></div>
+			</div>
+		</div>
+
+		<script src="tarot.js"></script>
+	</body>
+</html>
