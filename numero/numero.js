@@ -44,19 +44,19 @@ function displayResults(data) {
 	const tailDescs = data.karmic_tail.descriptions
 		.map(
 			(desc, i) => `
-			<div class="karmicTail">
-			<img 
-			src="../static/cards/HA0${
-				data.karmic_tail.numbers[i] < 10
-					? "0" + data.karmic_tail.numbers[i]
-					: data.karmic_tail.numbers[i]
-			}.jpg"
-			width="150"
-			height="225" 
-			>
-			<p><strong>${data.karmic_tail.numbers[i]}:</strong> ${desc}</p>
-			</div>
-			`
+        <div class="karmicTail">
+        <img 
+        src="../static/cards/HA0${
+			data.karmic_tail.numbers[i] < 10
+				? "0" + data.karmic_tail.numbers[i]
+				: data.karmic_tail.numbers[i]
+		}.jpg"
+        width="150"
+        height="225" 
+        >
+        <p><strong>${data.karmic_tail.numbers[i]} : </strong> ${desc}</p>
+        </div>
+        `
 		)
 		.join("");
 

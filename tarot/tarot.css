@@ -149,6 +149,19 @@ button:hover {
 	margin: 0.5rem 0;
 	text-align: center;
 	max-height: 100px;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+
+.card p:last-child {
+	position: absolute;
+	bottom: 0.3rem;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0.3rem;
 }
 
 .card.positive p {

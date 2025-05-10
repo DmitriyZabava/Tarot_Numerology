@@ -143,7 +143,7 @@ button:hover {
 }
 
 .result-card h3 {
-	margin-top: 0;
+	margin: 0 0 1rem;
 	color: #e0d3b4;
 	font-size: 1.3rem;
 }
@@ -157,7 +157,7 @@ button:hover {
 	display: flex;
 	align-items: center;
 	gap: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin: 0.3rem 0 1rem;
 }
 
 .karmicTail img {
