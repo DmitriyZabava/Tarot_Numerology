@@ -19,6 +19,10 @@
 								type="text"
 								id="name"
 								name="name"
+								pattern="[A-Za-z\s]+"
+								title="Только латинские буквы"
+								oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')"
+								inputmode="latin-name"
 								required
 							/>
 						</div>
@@ -30,6 +34,8 @@
 								name="day"
 								min="1"
 								max="31"
+								onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189"
+								oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);"
 								required
 							/>
 						</div>
@@ -43,6 +49,8 @@
 								name="month"
 								min="1"
 								max="12"
+								onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189"
+								oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);"
 								required
 							/>
 						</div>
@@ -54,6 +62,8 @@
 								name="year"
 								min="1900"
 								max="2999"
+								onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189"
+								oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);"
 								required
 							/>
 						</div>

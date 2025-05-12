@@ -91,6 +91,10 @@ input:focus {
 	box-shadow: 0 0 0 2px rgba(224, 211, 180, 0.2);
 }
 
+input:invalid {
+	border-color: red;
+}
+
 button {
 	background: rgba(115, 102, 76, 0.8);
 	color: white;
